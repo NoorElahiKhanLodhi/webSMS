@@ -1,0 +1,177 @@
+.heading{
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    color: brown;
+    animation: fadeIn 2s forwards;
+    background-color: khaki;
+    border-color: black;
+    border-style: solid;
+    margin: 0 auto;
+}
+.add input[type=number]{
+    width: 4em;
+}
+input[type=button], .v, .b3, .b2, .b1{
+    font-size: large;
+    font-weight: bolder;
+    color: brown;
+    background-color: gainsboro;
+    border-style: none;
+    border-radius: 0.5em;
+    border-color: white;
+}
+
+.v:hover, .b3:hover, .b2:hover, .b1:hover, input[type=button]:hover{
+    color: black;
+    border-style: groove;
+    border-color: blue;
+}
+
+
+.add{
+    background-color: powderblue;
+    border-style: inset;
+    text-align: center;
+    line-height: 3em;
+    border-radius: 20%;
+    border-color: brown;
+    animation: fadel 3s forwards;
+    float: left;
+    margin: 0% auto;
+
+}
+@keyframes fadel {
+    from{
+        opacity: 0;
+        transform: translateX(-8em);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.view{
+    background-color: powderblue;
+    border-style: inset;
+    text-align: center;
+    line-height: 2.6em;
+    border-radius: 20%;
+    border-color: brown;
+    animation: fades 3s forwards;
+    float: right;
+    margin: 0% auto;
+    padding-bottom: 3em;
+}
+.v{
+    margin: 0 auto;
+}
+.c{
+    float: left;
+}
+.g{
+    float: right;
+}
+
+td, th{
+    line-height: 2.5em;
+    outline-style: solid;
+    outline-color: white;
+    outline-offset: 0em;
+    outline-width: 0.1em;
+    color: brown;
+}
+@keyframes fades {
+    from{
+        opacity: 0;
+        transform: translateX(10em);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+select{
+    width: 100%;
+}
+.add table{
+    margin: 0 auto;
+}
+.view table{
+    margin: 0 auto;
+padding-bottom: 1em;
+}
+.view table th{
+    background-color: #D6EEEE;
+}
+
+@media(min-width: 200px){
+
+    .heading{
+        padding: 1%;
+        text-align: center;
+        font-size: 150%;
+        border-radius: 1em;
+        max-width: 100%;
+        margin-bottom: 0.5em;
+    }
+
+    body{
+        background: black url(../images/bgmobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .logout{
+        float: left;
+    }
+    .back{
+        float: left;
+    }
+    .add,.view{
+        padding: 1em;
+        margin: 0 auto 0.5em;
+    }
+    .view{
+        float: left;
+    }
+}
+
+@media(min-width: 1360px){
+    .view table{
+        margin: 0 auto;
+    }
+    .heading{
+        font-size: 300%;
+        border-radius: 3em;
+        max-width: fit-content;
+        margin-bottom: 5%;
+    }
+    .add{
+        float: left;
+        padding-left: 7em;
+        padding-right: 7em;
+        margin-left: 3em;
+    }
+    .view{
+        float: right;
+        padding-left: 5em;
+        padding-right: 5em;
+        margin-right: 3em;
+    }
+    body{
+        background: black url(../images/bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .logout{
+        float: right;
+    }
+    .back{
+        float: left;
+        position: fixed;
+    }
+}
+

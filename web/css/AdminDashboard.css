@@ -1,0 +1,150 @@
+body{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: brown;
+    animation: fadeIn 2s forwards;
+    background-color: khaki;
+    border-color: black;
+    border-style: solid;
+    border-radius: 3em;
+    padding: 0.2em;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to{
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}
+
+.panel{
+    background-color: powderblue;
+    border-style: outset;
+    text-align: center;
+    animation: fadel 4s forwards;
+    border-radius: 10%;
+    border-color: cornsilk;
+    margin: 0 auto;
+}
+
+
+@keyframes fadel {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.95;
+    }
+}
+
+.bar{
+    background-color: khaki;
+    animation: fadel 4s forwards;
+    border-color: cornsilk;
+    border-style: groove;
+    border-radius: 0.2em;
+}
+a{
+    text-decoration: none;
+    color: brown;
+    display: block;
+}
+
+label{
+    font-weight: bold;
+    color: brown;
+}
+
+input[type=button]{
+    font-size: large;
+    font-weight: bolder;
+    color: brown;
+    background-color: white;
+    border-style: none;
+    border-radius: 0.5em;
+    border-color: white;
+}
+
+input[type=button]:hover{
+    color: black;
+    border-style: groove;
+    border-color: blue;
+}
+
+.hd{
+        color: brown;
+}
+
+@media(min-width: 100px){
+ .hd{ 
+     font-size: small;
+ }
+    body{
+        background: black url('../images/bgmobile.jpg');
+        background-size: 99%;
+    }
+    .heading{
+        font-weight: bold;
+        font-size: 200%;
+        margin: 1em auto;
+        max-width: 100%;
+    }
+    .bar{
+        font-size: 0.7em;
+        line-height: 1em;
+        max-width: fit-content;
+        position: fixed;
+    }
+    .panel{
+        padding: 0.5em;
+                line-height: 3em;
+    max-width: fit-content;
+    }
+    label{
+        font-size: x-small;
+    }
+}
+
+@media(min-width: 1000px){
+    body{
+        background: black url('../images/bg.jpg');
+        background-size: 100%;
+    }
+    .heading{
+        font-weight: bolder;
+        font-size: 400%;
+        margin: 0.5em auto;
+        max-width: fit-content;
+    }
+    .bar{
+        font-size: 2.5em;
+        max-width: fit-content;
+    line-height: 0.7em;
+    position: fixed;
+    }
+    .panel{
+        padding: 3em;
+        line-height: 3em;
+    }
+    .hd{
+        color: brown;
+        font-size: 300%;
+    }
+    label{
+        font-size: large;
+    }
+.bar a:hover{
+    border-style: inset;
+    border-color: white;
+    border-radius: 0.2em;
+}
+}

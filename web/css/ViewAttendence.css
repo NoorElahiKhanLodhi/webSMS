@@ -1,0 +1,148 @@
+.heading{
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    color: brown;
+    animation: fadeIn 2s forwards;
+    background-color: khaki;
+    border-color: black;
+    border-style: solid;
+    margin: 0 auto;
+    animation: fadedown 2s forwards;
+}
+@keyframes fadedown {
+    from{
+        transform: translateY(-1em);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.per{
+    color: white;
+    font-weight: bold;
+    margin: 0 40% 0 40%;
+    font-size: larger;
+    font-family: sans-serif;
+    background-color: darkmagenta;
+    outline-color: white;
+    outline-style: solid;
+}
+input[type=button]{
+    font-size: large;
+    font-weight: bolder;
+    color: brown;
+    background-color: gainsboro;
+    border-style: none;
+    border-radius: 0.5em;
+    border-color: white;
+}
+.view{
+        font-size: medium;
+    font-weight: bold;
+    color: brown;
+    background-color: gainsboro;
+    border-style: none;
+    border-radius: 0.5em;
+    border-color: white;
+}
+.view:hover{
+    color: black;
+    border-style: groove;
+    border-color: blue;
+}
+
+input[type=button]:hover{
+    color: black;
+    border-style: groove;
+    border-color: blue;
+}
+.hh{
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table{
+    background-color: aqua;
+    text-align: center;
+}
+tr,th,td{
+    border-style: solid;
+    border-width: 0.1em;
+}
+td{
+    padding: 0 6em;
+    font-weight: lighter;
+}
+
+@media (min-width: 300px) {
+    .heading{
+        font-size: 150%;
+        padding: 1%;
+        border-radius: 2em;
+        text-align: center;
+    }
+
+    body{
+        background: black url(../images/bgmobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .month,.view{
+        margin: 1em;
+        padding: 2% 5%;
+    }
+
+
+
+}
+
+@media (min-width: 1000px) {
+    .logout{
+        animation: fadedown 2s forwards;
+        float: right;
+    }
+    .back{
+        float: left;
+        animation: fadedown 2s forwards;
+        position: fixed;
+    }
+    .heading{
+        font-size: 300%;
+        border-radius: 3em;
+        max-width: fit-content;
+        margin-bottom: 5%;
+    }
+    table{
+        max-width: 100%;
+        font-size: xx-large;
+        margin: 0 auto;
+    }
+
+    body{
+        background: black url(../images/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+    .view{
+        padding: 0 31em;
+        margin:0 10em;
+        margin-bottom: 2em;
+    }
+
+    .month{
+        font-size: x-large;
+        padding: 0 18em;
+        margin: 0 6.65em 1em;
+    }
+    .hh{
+        font-size: 150%;
+    }
+
+}

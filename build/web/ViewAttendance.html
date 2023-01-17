@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Attendance</title>
+    <link rel="stylesheet" href="css/ViewAttendance.css">
+</head>
+<body>
+   <a href="TeacherDashboard.jsp">
+        <input type="button" value="BACK" class="back">
+    </a>
+    <a href="index.html">
+        <input type="button" value="LOGOUT" class="logout">
+    </a>
+    <h1 class="heading">YOUR ATTENDANCE</h1>
+<div class="hh">
+<h1><%=session.getAttribute("teachName")%></h1>
+<h1><%=session.getAttribute("teachId")%></h1></div>
+    <form action="ViewAttendanceServlet" method="post">
+    <select class="month" name="month">
+    <option value="0">Select Month</option>
+    <option value="1">JAN</option>
+    <option value="2">FEB</option>
+    <option value="3">MAR</option>
+    <option value="4">APR</option>
+    <option value="5">MAY</option>
+    <option value="6">JUN</option>
+    <option value="7">JUL</option>
+    <option value="8">AUG</option>
+    <option value="9">SEP</option>
+    <option value="10">OCT</option>
+    <option value="11">NOV</option>
+    <option value="12">DEC</option>
+</select><br>
+<input type="submit" value="VIEW" class="view"/>
+</form>
+</body>
+</html>

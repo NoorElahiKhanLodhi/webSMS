@@ -1,0 +1,186 @@
+.heading{
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    color: brown;
+    background-color: khaki;
+    border-color: black;
+    border-style: solid;
+    margin: 0 auto;
+    animation: fadedown 2s forwards;
+}
+@keyframes fadedown {
+    from{transform: translateY(-1em);
+    opacity: 0;}
+to{    transform: translateY(0);
+    opacity: 1;}    
+}
+.per{
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: larger;
+    font-family: sans-serif;
+    background-color: darkmagenta;
+    outline-color: white;
+    outline-style: solid;
+}
+input[type=button]{
+    font-size: large;
+    font-weight: bolder;
+    color: brown;
+    background-color: gainsboro;
+    border-style: none;
+    border-radius: 0.5em;
+    border-color: white;
+    padding: 0.15em;
+}
+button{
+        font-size: large;
+    font-weight: bolder;
+    color: brown;
+    background-color: gainsboro;
+    border-style: none;
+    border-radius: 0.5em;
+    border-color: white;
+    padding: 0.15em;
+}
+button:hover{
+    color: black;
+    border-style: groove;
+    border-color: blue;
+}
+input[type=button]:hover{
+    color: black;
+    border-style: groove;
+    border-color: blue;
+}
+.take,.view,.cview{
+text-align: center;
+border-style: double;
+border-radius: 2em;
+background-color: powderblue;
+}
+.take{
+    animation: fadel 2s forwards;}
+    @keyframes fadel {
+        from{transform: translateX(-2em);
+        opacity: 0;}
+    to{    transform: translateX(0);
+        opacity: 0.95;}    
+    }   
+    .view{
+animation: fader 2s forwards;
+    }
+    @keyframes fader {
+        from{transform: translateX(7em);
+        opacity: 0;}
+    to{    transform: translateX(0);
+        opacity: 0.95;}    
+    }   
+    .cview{
+        animation: fadeup 2s forwards;
+    }
+    
+    @keyframes fadeup {
+        from{transform: translateY(7em);
+        opacity: 0;}
+    to{    transform: translateY(0);
+        opacity: 0.95;}    
+    }   
+
+td,th,tr{
+    border-style: solid;
+    border-color: black;
+    border-width: 0.1em;
+    background-color: rgb(218, 249, 252);
+    font-size: 100%;
+    text-align: center;
+    height: 1em;
+    width: 100%;
+}
+th{
+    border-bottom-style: solid;
+}
+.clear{
+    width: 100%;
+}
+
+@media (min-width: 300px) {
+    .heading{
+        font-size: 150%;
+        padding: 1%;
+        border-radius: 2em;
+        text-align: center;
+    }
+    .atd{
+           width: 100%;
+    }
+    .cls{
+        font-size: medium;
+        float: left;
+        width: 100%;
+    }
+    .take,.view,.cview{
+        margin: 0 auto;
+    }
+    
+    body{
+        background: black url(../images/bgmobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+}
+
+@media (min-width: 1000px) {
+    .atd{
+        float: left;
+        max-width: fit-content;
+    }
+    .cls{
+        font-size: medium;
+    }
+    .logout{
+    float: right;animation: fadedown 2s forwards;
+}
+.back{
+    float: left;animation: fadedown 2s forwards;
+    position: fixed;
+}
+.heading{
+    font-size: 300%;
+    border-radius: 3em;
+    max-width: fit-content;
+    margin-bottom: 5%;
+}
+.take{
+    float: left;
+    margin-left: 5%;
+    width: 40%;
+    padding: 1em;
+}
+.view{
+    float: right;
+    margin-right: 5%;
+    padding-bottom: 5%;
+    width: 40%;
+    padding: 1em;
+}
+.cview{
+    margin: 0 auto;
+    width: 90%;
+    float: left;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 1em;
+}
+body{
+    background: black url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+}
+

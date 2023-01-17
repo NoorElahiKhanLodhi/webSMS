@@ -1,0 +1,81 @@
+.heading{
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 300%;
+    color: peru;
+    animation: fadeIn 2s forwards;
+    background-color: khaki;
+    border-color: black;
+    border-style: solid;
+    border-radius: 3em;
+    max-width: fit-content;
+    padding: 2.5%;
+    margin: 1em auto;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.login{
+    margin: 0 auto;
+    background-color: powderblue;
+    border-style: inset;
+    text-align: center;
+    line-height: 4em;
+    border-radius: 20%;
+    border-color: brown;
+    animation: fadel 3s forwards;
+    max-width: 100%;
+}
+@keyframes fadel {
+    from{
+        opacity: 0;
+        transform: translateY(8em);
+    }
+    to{
+        opacity: 0.95;
+        transform: translateY(0);
+    }
+}
+
+select{
+    font-weight: bold;
+    background-color: lightgray;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media(min-width: 200px){
+    body{
+        background: powderblue url('../images/schoolBGmobile.jpg');
+        background-size: 100%;
+    }
+    .heading{
+        margin: 1em auto;
+    }
+label{
+    color: brown;
+    font-size: medium;
+}
+}
+
+@media(min-width: 1000px){
+    body{
+        background: powderblue url('../images/schoolBG.jpg');
+        background-size: 100%;
+    }
+    label{
+    font-size: large;
+}
+}

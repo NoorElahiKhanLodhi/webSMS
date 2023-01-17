@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOME:Login/SignUp</title>
+        <link rel="stylesheet" href="css\index.css">
+    </head>
+    <body>
+    <h1 class="heading">HOME</h1>
+    <div class="login">
+        <form action="loginServlet" method="post">
+            <h1>LOGIN</h1>
+            <label for="id">Enter ID:</label>
+            <input type="text" name="id" id="id"><br>
+            <label for="pass">Enter Password:</label>
+            <input type="password" name="pass" id="pass"><br>
+            <select name="poss" id="poss">
+                <option value="">Select Designation</option>
+                <option value="t">Teacher</option>
+                <option value="a">Admin</option></select><br>
+            <input type="submit" value="LOGIN"/>
+        </form></div>
+      
+    </body>
+</html>
